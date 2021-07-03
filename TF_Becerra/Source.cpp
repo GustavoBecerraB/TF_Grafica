@@ -173,7 +173,7 @@ i32 main() {
 		shader->setMat4("proj", proj);
 		shader->setMat4("view", cam->getViewM4());
 		model = glm::mat4(1.0f);
-		model = translate(model, glm::vec3(sin(currentFrame), 5, cos(currentFrame)));//Movement
+		model = translate(model, glm::vec3(sin(currentFrame), 10, cos(currentFrame)));//Movement
 		model = rotate(model, currentFrame, glm::vec3(0.0f, 0.50f, 0.0f));//Rotation
 		model = glm::scale(model, glm::vec3(0.3));
 		shader->setMat4("model", model);
